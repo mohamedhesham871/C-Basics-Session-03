@@ -172,6 +172,35 @@ namespace C__Basics_Session_03
             //prec = (Total/500.0) * 100;
             //Console.WriteLine($"Total number is {Total}\nthe Average is {Avg}\nthe Precentage is {prec}");
             #endregion
+
+            #region Q11:Write a program to input the month number and print the number of days in that month
+            Console.WriteLine("enter Month  number :");
+
+            int x = int.Parse(Console.ReadLine());
+             switch(x)
+            {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    Console.WriteLine(31);
+                    break;
+             case 2:
+                    Console.WriteLine(29);
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    Console.WriteLine(30);
+                    break;
+
+            }
+            #endregion
+
         }
 
     }
