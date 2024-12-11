@@ -174,32 +174,66 @@ namespace C__Basics_Session_03
             #endregion
 
             #region Q11:Write a program to input the month number and print the number of days in that month
-            Console.WriteLine("enter Month  number :");
+            //Console.WriteLine("enter Month  number :");
 
-            int x = int.Parse(Console.ReadLine());
-             switch(x)
+            //int x = int.Parse(Console.ReadLine());
+            // switch(x)
+            //{
+            //    case 1:
+            //    case 3:
+            //    case 5:
+            //    case 7:
+            //    case 8:
+            //    case 10:
+            //    case 12:
+            //        Console.WriteLine(31);
+            //        break;
+            // case 2:
+            //        Console.WriteLine(29);
+            //        break;
+            //    case 4:
+            //    case 6:
+            //    case 9:
+            //    case 11:
+            //        Console.WriteLine(30);
+            //        break;
+            //
+            //      }
+            #endregion
+
+            #region Q12: Write a program to create a Simple Calculator.
+            Console.WriteLine("Enter  Two integer numbers ");
+            double x=int.Parse(Console.ReadLine());    
+            double y=int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter Operation You Want ");
+            Console.WriteLine("[1] Add\n[2]Subtraction\n[3]Multiplication\n[4]Division\n[5]Modulus");
+            int OP = int.Parse(Console.ReadLine());
+            switch(OP)
             {
                 case 1:
-                case 3:
-                case 5:
-                case 7:
-                case 8:
-                case 10:
-                case 12:
-                    Console.WriteLine(31);
+                    Console.WriteLine($"{x} + {y} ={x + y}");
                     break;
-             case 2:
-                    Console.WriteLine(29);
+                case 2:
+                    Console.WriteLine($"{x} - {y} ={x - y}");
+                    break;
+                case 3:
+                    Console.WriteLine($"{x} * {y} ={x * y}");
                     break;
                 case 4:
-                case 6:
-                case 9:
-                case 11:
-                    Console.WriteLine(30);
+                    if (y == 0) { Console.WriteLine("Can not Divide on Zero"); break; }
+                    Console.WriteLine($"{x} / {y} ={x / y}");
                     break;
-
+                case 5:
+                    Console.WriteLine($"{x} % {y} ={x % y}");
+                    break;
+                default:
+                    Console.WriteLine("Invalid input Try Agin");
+                    break;
             }
+
             #endregion
+
 
         }
 
