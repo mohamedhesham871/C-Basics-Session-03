@@ -1,4 +1,6 @@
-﻿namespace C__Basics_Session_03
+﻿using System.Transactions;
+
+namespace C__Basics_Session_03
 {
     internal class Program
     {
@@ -20,17 +22,55 @@
 
             #region Q2: Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
 
-            Console.WriteLine("enter number :");
-            int x = int.Parse(Console.ReadLine());
+            //Console.WriteLine("enter number :");
+            //int x = int.Parse(Console.ReadLine());
 
-            if (x >=0)
+            //if (x >=0)
+            //{
+            //    Console.WriteLine("positive");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("negative");
+            //}
+            #endregion
+
+            #region Q3: Write a program that takes 3 integers from the user then prints the max element and the min element.
+            Console.WriteLine("enter three number  :");
+            int x= int.Parse(Console.ReadLine());
+            int y= int.Parse(Console.ReadLine());   
+            int z= int.Parse(Console.ReadLine());
+            int MaxNumber ,MinNumber;
+
+            //Fisrt Way To solve 
+            MaxNumber = Math.Max(Math.Max(x, y), z);
+            MinNumber = Math.Min(Math.Min(x, y), z);
+            Console.WriteLine($"MAX number is {MaxNumber} and Min Number is {MinNumber}");
+            //Second way To solve 
+            if (x > y)
             {
-                Console.WriteLine("positive");
+                if (x > z)
+                {
+                    MaxNumber = x;
+                    MinNumber = (y > z) ? z : y;
+                }
+                else
+                {
+                    MaxNumber = z;
+                    MinNumber = y;
+                }
+            }
+            else if (y > z)
+            {
+                MaxNumber = y;
+                MinNumber = (x > z) ? z : x;
             }
             else
             {
-                Console.WriteLine("negative");
+                MaxNumber = z;
+                MinNumber = x;
             }
+            Console.WriteLine($"Max number is : {MaxNumber} and min number is {MinNumber}");
             #endregion
         }
     }
