@@ -74,19 +74,39 @@ namespace C__Basics_Session_03
             #endregion
 
             #region Q4: Write a program that allows the user to insert an integer number then check If a number is even or odd.
-            Console.WriteLine("enter number :");
+            //Console.WriteLine("enter number :");
 
-            int x = int.Parse(Console.ReadLine());
+            //int x = int.Parse(Console.ReadLine());
 
-            if (x %2== 0)
+            //if (x %2== 0)
+            //{
+            //    Console.WriteLine("Even");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("ODD");
+            //}
+            #endregion
+
+            #region Q5:Write a program that takes character from the user then if it is a vowel chars (a,e,I,o,u) then print (vowel) otherwise print (consonant)
+            Console.WriteLine("enter Char :");
+
+            string ss = Console.ReadLine();
+            switch (ss)
             {
-                Console.WriteLine("Even");
-            }
-            else
-            {
-                Console.WriteLine("ODD");
+                case "a":
+                case "e":
+                case "I":
+                case "o":
+                case "u":
+                    Console.WriteLine("vowel");
+                    break;
+                default: Console.WriteLine("consonant");
+                    break;
+
             }
             #endregion
         }
+
     }
 }
