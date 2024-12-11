@@ -119,14 +119,23 @@ namespace C__Basics_Session_03
             #endregion
 
             #region Q7: Write a program that allows the user to insert an integer then  print a multiplication table up to 12
+            //Console.WriteLine("enter number :");
+
+            //int x = int.Parse(Console.ReadLine());
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    Console.WriteLine($"{i} * {x} = {i * x}");
+            //}
+
+            #endregion
+            #region Q8:Write a program that allows to user to insert number then print all even numbers between 1 to this number
             Console.WriteLine("enter number :");
 
             int x = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= 12; i++)
+            for (int i = 2; i <= x; i++)
             {
-                Console.WriteLine($"{i} * {x} = {i * x}");
+                if (i % 2 == 0) Console.Write($"{i} ");
             }
-
             #endregion
         }
 
