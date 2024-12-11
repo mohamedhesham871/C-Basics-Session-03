@@ -89,22 +89,33 @@ namespace C__Basics_Session_03
             #endregion
 
             #region Q5:Write a program that takes character from the user then if it is a vowel chars (a,e,I,o,u) then print (vowel) otherwise print (consonant)
-            Console.WriteLine("enter Char :");
+            //Console.WriteLine("enter Char :");
 
-            string ss = Console.ReadLine();
-            switch (ss)
+            //string ss = Console.ReadLine();
+            //switch (ss)
+            //{
+            //    case "a":
+            //    case "e":
+            //    case "I":
+            //    case "o":
+            //    case "u":
+            //        Console.WriteLine("vowel");
+            //        break;
+            //    default: Console.WriteLine("consonant");
+            //        break;
+
+            //}
+            #endregion
+
+            #region Q6:Write a program that allows the user to insert an integer then print all numbers between 1 to that number.
+            Console.WriteLine("enter number :");
+
+            int x=int.Parse(Console.ReadLine());
+            for (int i = 1; i <= x; i++)
             {
-                case "a":
-                case "e":
-                case "I":
-                case "o":
-                case "u":
-                    Console.WriteLine("vowel");
-                    break;
-                default: Console.WriteLine("consonant");
-                    break;
-
+                Console.Write($"{i} ");
             }
+
             #endregion
         }
 
