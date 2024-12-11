@@ -108,12 +108,23 @@ namespace C__Basics_Session_03
             #endregion
 
             #region Q6:Write a program that allows the user to insert an integer then print all numbers between 1 to that number.
+            //Console.WriteLine("enter number :");
+
+            //int x=int.Parse(Console.ReadLine());
+            //for (int i = 1; i <= x; i++)
+            //{
+            //    Console.Write($"{i} ");
+            //}
+
+            #endregion
+
+            #region Q7: Write a program that allows the user to insert an integer then  print a multiplication table up to 12
             Console.WriteLine("enter number :");
 
-            int x=int.Parse(Console.ReadLine());
-            for (int i = 1; i <= x; i++)
+            int x = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= 12; i++)
             {
-                Console.Write($"{i} ");
+                Console.WriteLine($"{i} * {x} = {i * x}");
             }
 
             #endregion
