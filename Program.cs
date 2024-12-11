@@ -129,13 +129,21 @@ namespace C__Basics_Session_03
 
             #endregion
             #region Q8:Write a program that allows to user to insert number then print all even numbers between 1 to this number
-            Console.WriteLine("enter number :");
+            //Console.WriteLine("enter number :");
+
+            //int x = int.Parse(Console.ReadLine());
+            //for (int i = 2; i <= x; i++)
+            //{
+            //    if (i % 2 == 0) Console.Write($"{i} ");
+            //}
+            #endregion
+
+            #region Q9: Write a program that takes two integers then prints the power
+            Console.WriteLine("enter Two  number :");
 
             int x = int.Parse(Console.ReadLine());
-            for (int i = 2; i <= x; i++)
-            {
-                if (i % 2 == 0) Console.Write($"{i} ");
-            }
+            int y = int.Parse(Console.ReadLine());
+            Console.WriteLine(Math.Pow(x, y));
             #endregion
         }
 
