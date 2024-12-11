@@ -1,4 +1,5 @@
-﻿using System.Transactions;
+﻿using System.Diagnostics;
+using System.Transactions;
 
 namespace C__Basics_Session_03
 {
@@ -139,11 +140,37 @@ namespace C__Basics_Session_03
             #endregion
 
             #region Q9: Write a program that takes two integers then prints the power
-            Console.WriteLine("enter Two  number :");
+            //Console.WriteLine("enter Two  number :");
 
-            int x = int.Parse(Console.ReadLine());
-            int y = int.Parse(Console.ReadLine());
-            Console.WriteLine(Math.Pow(x, y));
+            //int x = int.Parse(Console.ReadLine());
+            //int y = int.Parse(Console.ReadLine());
+            //Console.WriteLine(Math.Pow(x, y));
+            ////Another Solve 
+
+            //long muti = 1;
+            //for (int i=1;i<=y;i++)
+            //{
+            //    muti *= x ;
+
+            //}
+            //Console.WriteLine(muti);
+            #endregion
+
+            #region Q10:Write a program to enter marks of five subjects and calculate total, average and percentage
+            ////i Will use Splie Function 
+            //Console.WriteLine("enter Marks of five subjects ");
+            //string x = Console.ReadLine();
+            //int[] number = new int[5];
+            //int Total=0;
+            //double Avg, prec;
+            //for(int i=0;i<5;i++)
+            //{
+            //    number[i] = int.Parse(x.Split(" ")[i]);
+            //    Total += number[i];
+            //}
+            //Avg = (Total / 5);
+            //prec = (Total/500.0) * 100;
+            //Console.WriteLine($"Total number is {Total}\nthe Average is {Avg}\nthe Precentage is {prec}");
             #endregion
         }
 
